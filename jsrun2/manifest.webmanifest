@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "JSrunner",
-  "short_name": "JSRUN",
+  "name": "Mains JSrunner",
+  "short_name": "MAINSJSRUN",
   "start_url": "/jsrun2/index.html"
 }
