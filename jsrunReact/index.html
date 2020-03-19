@@ -3,20 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
     <meta charset="UTF-8"/>
-      <title>Mains JS_Run_2_It! React</title>
-      <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
-      <script src= "https://unpkg.com/react@16/umd/react.development.js"></script>
-      <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-      <script src= "https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-      <script src= "https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-	<!--  
-  function execute(code) {
-  // this is the recommended way of executing code with Function
-  return Function('"use strict";return ' + code)();
-}
- -->
-	  
-	  
+      <title>JS_React_2_It!</title>
+	  <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	  <script src= "https://unpkg.com/react@16/umd/react.development.js"></script>
+	  <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	  <script src= "https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	  <script src= "https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+ 
     <script>
       window.onload = function () {
         var runScript = function execute(code) {
@@ -26,8 +19,10 @@
             alert(e.description || e);
           }
         };
+
         document.getElementById("runButtonTop").onclick = runScript;
         document.getElementById("runButtonBottom").onclick = runScript;
+
       };
     </script>
 
@@ -36,16 +31,15 @@
 
   <!-- Latest W3schools JavaScript -->
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-    	<script src="index.js" defer></script>
-    	<link rel="manifest" href="manifest.webmanifest">
+
   </head>
 <body class="w3-container">
-  <h1 id="header">Mains JS_Run_It! Browser Sandbox</h1>
+  <h1 id="header">JS_React_2_It! Browser Sandbox</h1>
   <form>
     <div id="scratch" class="w3-container">
       <p id="introduction">
       Type or paste a JavaScript program into the box below. (id="scriptArea") <br >
-      Then click <input type="button" value="Run" id="runButtonTop" class="w3-button w3-gray" />
+      Then click <input type="button" value="Run" id="runButtonTop" class="w3-button w3-green" />
       here or below the paste area to try it.
       </p>
         <div class="w3-panel">
@@ -54,15 +48,18 @@
           </p>
         </div>
         <div id="buttonPanel1" class="w3-panel">
-          <input type="button" value="Run" id="runButtonBottom" class="w3-button w3-gray" />
+          <input type="button" value="Run" id="runButtonBottom" class="w3-button w3-green" />
           <input type="reset" value="Clear Script" id="clearButton1" class="w3-button w3-red" />
         </div>
     <!-- </div> -->
       <p id="resolution">Results from above can be sent to the box below (id="resultArea"). Or, try outputs like prompt and alert.</p>
-    <div class="w3-panel">
-      <p>
+    <div id="resultArea" class="w3-panel w3-border" rows="5">
+	<p>resultArea</p>
+ <!--
+        <p>
         <textarea id="resultArea" rows="5" class="w3-input w3-border"></textarea>
-      </p>
+        </p>
+ -->
     </div>
       <div id="buttonPanel2" class="w3-panel">
         <input type="button" value="Clear Result" id="clearButton2" onclick="myFunction2()" class="w3-button w3-red" />
@@ -87,12 +84,18 @@
     </div>
   </form>
   <script>
+
   		function myFunction1() {
   		    document.getElementById("scriptArea").reset();
   		};
+
   		function myFunction2() {
-  		    document.getElementById("resultArea").innerHTML = null;
+ 		    document.getElementById("resultArea").innerHTML = null;
+ 		    document.getElementById("resultArea").innerText = null;
+  		    document.getElementById("resultArea").innerHTML = "<p>resultArea</p>"; 
 		};
+
+
   </script>
     <!-- W3schools core JavaScript could be linked here to possibly load faster -->
     <!-- Latest W3schools JavaScript -->
@@ -100,6 +103,5 @@
     <!-- Based in part on code from the view-source for: http://javascript.cs.lmu.edu/runner/ -->
     <!-- Modifications by James S. deBettencourt, PhD to use simple responsive design from W3Schools.com -->
     <!-- Latest modifications March 18, 2019 -->
-  <button class="add-button">Add to home screen</button>
   </body>
 </html>
