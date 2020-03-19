@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Mains JSrunner React",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "images/pirate_PNG90.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "name": "Mains JSrunner React",
+  "short_name": "MAINSJSRUNREACT",
+  "start_url": "/jsrunReact/index.html"
+}
