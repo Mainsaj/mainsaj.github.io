@@ -1,0 +1,20 @@
+[{
+  "key": 0,
+  "name":"Apple",
+  "color":"Red"
+},
+{
+  "key": 1,
+  "name":"Orange",
+  "color":"Orange"
+},
+{
+  "key": 2,
+  "name":"Banana",
+  "color":"Yellow"
+},
+{
+  "key": 3,
+  "name":"Grape",
+  "color":"Purple"
+}]
