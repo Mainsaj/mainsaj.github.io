@@ -1,0 +1,71 @@
+img {
+    padding:1em;
+    width:100%;
+}
+
+body {
+    background-image:url(/img/ice-arena.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-beige {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.v-align {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left-side {
+    border-bottom:1px solid black;
+    border-right:0.5px solid black;
+}
+
+.right-side {
+    border-bottom:1px solid black;
+    border-left:0.5px solid black;
+}
+
+.middle {
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+}
+
+.top {
+    border-top:1px solid black;
+}
+
+.qualifications {
+    font-size:30px;
+}
+
+@media (min-width:576px) {
+    p {
+        font-size: 16px;
+        margin-top:1em;
+    }
+}
+
+@media (min-width:768px) {
+    p {
+        font-size: 20px;
+        margin-top:1em;
+    }
+}
+
+@media (min-width:992px) {
+    p {
+        font-size: 25px;
+        margin-top:1em;
+    }
+}
+
+@media (min-width:1200px) {
+    p {
+        font-size: 30px;
+        margin-top:1em;
+    }
+}
